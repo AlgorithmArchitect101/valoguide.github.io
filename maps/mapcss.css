@@ -1,0 +1,205 @@
+body{
+  background: linear-gradient(225deg, #3a003a 0%, #2d0054 50%, #002e4f 100%);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 963px;
+
+}
+#icebox{
+  transform: rotate(270deg);
+}
+#ascent,#split{
+    transform: rotate(90deg);
+}
+
+#allbutton{
+  margin-left: 22%;
+}
+#bind,#split,#icebox,#lotus,#breeze ,#sunset,#ascent{
+  
+  margin-top: 10px;
+  width: 40%;
+  height: 40%;
+  display: none;
+  margin-left: 30%;
+  
+}
+
+.astraab,.breachab,.brimab,.chamberab,.cloveab,.cypherab,.harborab,.isoab,.kayoab,.reynaab,.jettab,.neonab,.omenab,.phoenixab,.razeab,.sageab,.skyeab,.viperab,.yoruab,.deadlockab,.fadeab,.gekkoab,.killjoyab,.sovaab{
+  position: absolute;
+  display: none;
+  width: 30px;
+  height: 30px;
+  
+
+}
+
+#Gravity_Well{
+  top:700px;
+  left:500px;
+
+
+}
+#Stars{
+  top:700px;
+  left:550px;
+
+} 
+#Nova_Pulse{
+  top:700px;
+  left:600px;
+
+}
+#Cosmic_Divide {
+  top:700px;
+  left:700px;
+
+ 
+}
+
+
+
+#heads{
+  
+  
+  margin-top: 10px;
+  margin-left: 35%;
+  margin-right: 10%;
+  display: block;
+  
+}
+#headreyna,#headsage,#headkilljoy,#headkayo,#headiso,#headharbor,#headgekko,#headraze,#headcypher,#headclove,#headchamber,#headbreach,#headbrim,#headastra,#headomen,#headjett,#headphoenix,#headskye,#headfade,#headsova,#headviper,#headyoru,#headdeadlock{
+
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+
+
+#bindbutton,#splitbutton,#iceboxbutton,#lotusbutton,#ascentbutton,#breezebutton ,#sunsetbutton{
+  
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#ascentbutton{
+  background: url(Loading_Screen_Ascent.webp);
+  background-size: cover;
+
+}
+#bindbutton{
+  background: url(Loading_Screen_Bind.webp);
+  background-size: cover;
+
+}
+#splitbutton{
+  background: url(Loading_Screen_Split.webp);
+  background-size: cover;
+
+}
+#lotusbutton{
+  background: url(Loading_Screen_Lotus.webp);
+  background-size: cover;
+
+}
+#iceboxbutton{
+  background: url(Loading_Screen_Icebox.webp);
+  background-size: cover;
+
+}
+#breezebutton{
+  background: url(Loading_Screen_Breeze.webp);
+  background-size: cover;
+
+}
+#sunsetbutton{
+  background: url(Loading_Screen_Sunset.webp);
+  background-size: cover;
+
+}
+#bindbutton:hover{
+  background: url(Loading_Screen_Bind.webp);
+  transition: 1.0ms;
+  scale: 1.01;
+  transition: background-color 0.5s ease;
+  background-size: cover;
+  
+}
+#splitbutton:hover{
+  transition: 1.0ms;
+  scale: 1.01;
+  background: url(Loading_Screen_Split.webp);
+  background-size: cover;
+}
+#iceboxbutton:hover{
+  transition: 1.0ms;
+  scale: 1.01;
+  background: url(Loading_Screen_Icebox.webp);
+  background-size: cover;
+}
+#lotusbutton:hover{
+  transition: 100.0ms;
+  scale: 1.01;
+  background: url(Loading_Screen_Lotus.webp);
+  background-size: cover;
+}
+
+ 
+#ascentbutton:hover{
+  transition: 5s;
+  background: url(Loading_Screen_Ascent.webp);
+  transition: background-image 5s ease;
+  background-size: cover;
+  scale: 1.01;
+  transition: opacity 5s ease;
+}
+#breezebutton:hover{
+  transition: 1.0ms;
+  background: url(Loading_Screen_Breeze.webp);
+  background-size: cover;
+  scale: 1.01;
+}
+#sunsetbutton:hover{
+  transition: 1.0ms;
+  background: url(Loading_Screen_Sunset.webp);
+  background-size: cover;
+  scale: 1.01;
+}
+
+
+#harborPic,#viperPic,#omenPic,#brimPic,#astraPic,#clovePic,#isoPic,#jettPic,#yoruPic,#reynaPic,#razePic,#neonPic,#phoenixPic,#kayoPic,#sovaPic,#skyePic, #breachPic,#fadePic,#gekkoPic,#killjoyPic,#sagePic,#chamberPic,#deadlockPic ,#cypherPic{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 400px;
+  left: 800px;
+  display: inline-block;
+  display: none;
+}
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+  
+  
+ 

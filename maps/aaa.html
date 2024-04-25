@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Images</title>
+<style>
+    .image {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<img class="image" id="image1" src="Loading_Screen_Ascent.webp">
+<img class="image" id="image2" src="Loading_Screen_Bind.webp">
+<img class="image" id="image3" src="Loading_Screen_Breeze.webp">
+<img  id="image4" src="Loading_Screen_Haven.webp" onclick="toggleOtherImagesVisibility('.image')">
+
+<script>
+function toggleOtherImagesVisibility(className) {
+    var images = document.querySelectorAll(className); // Sélectionner toutes les images
+    for (var i = 0; i < images.length; i++) {
+        if (images[i].id !== 'image4') { // Vérifier si l'image n'est pas l'image 4
+            images[i].style.display = "block"; // Afficher l'image
+        }
+    }
+}
+</script>
+
+</body>
+</html>

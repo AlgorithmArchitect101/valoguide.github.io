@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #1e0151;
+  color: #fff;
+
+}  
+header {
+  
+    background:url(img.jpg) ;
+    border: #fff;
+    background-size: cover;
+    opacity: 70%;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    height: 330px;   
+}
+
+  
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+li{
+  border-radius: 5%;
+  
+  display: inline-block;
+  margin-right: 70px;
+  color: rgb(255, 255, 255);
+  position: static;
+}
+li::after{
+    content: "";
+    width: 200%;
+    height: 200%;
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left:0;
+    top:0;  
+}
+  li:hover{
+    transform: scale(1.5) ;
+    background-image: radial-gradient(circle
+    farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%,
+    rgba(2,245,255,1)100.2%);
+    transition: 0.5s;
+}
+.main-content{
+  justify-content: center;
+  padding: 10px;
+  
+}
+#search{
+  
+  background-color:#21005a;
+  border: none;
+  height: 35px;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-top: 100px;
+  margin-right: 50%;
+  margin-left: 30%;
+  width: 700px;
+  border-radius: 20%;
+}
+#log{
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #210059;
+  transition: 0.1s;
+  font-family: 'Games', sans-serif;
+}
+#log::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle
+  farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%,
+  rgba(2,245,255,1)100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left:0;
+  top:0;
+}
+#log:active{
+  transform: scale(0.9)rotate(3deg);
+  background-image: radial-gradient(circle
+  farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%,
+  rgba(2,245,255,1)100.2%);
+  transition: 0.5s;
+}
+#log:hover{
+  transition: 1ms;
+  scale: 1.05;
+} 
+
+.new{
+
+  margin: 30px;
+  border: 1px;
+  color: bisque;
+  border: solid;
+  border-color: rgb(255, 255, 255);
+  padding: 10px;
+  background:rgba(64, 0, 255, 0.3) ;
+  text-align: center;
+  border-radius: 5%;
+
+}
+img{
+  width: 500px;
+  height: 300px;
+  display: flex;
+}
+.news-article {
+  width: 600px;
+  height: 300px;
+  border: 1px solid black;
+  margin-right: 20px;
+  float: left;
+  position: relative;
+  cursor: pointer; 
+}
+
+.news-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: imageFade 10s infinite;
+}
+
+.news-title {
+  animation: titleAnimation 3s ease;
+  margin-bottom: 10px;
+}
+
+@keyframes titleAnimation {
+  0% {
+      transform: translateY(10px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+}
+
+@keyframes imageFade {
+  0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  40% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.container {
+  width: 400%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+h2{
+  font-family: 'Games', sans-serif;
+                                                
+}
+h6{
+  font-family: 'Games', sans-serif;
+}
+h4{
+  font-family: 'Games', sans-serif;
+}h3{
+  font-family: 'Games', sans-serif;
+}

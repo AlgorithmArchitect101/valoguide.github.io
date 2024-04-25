@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mapcss.css">
+    <script src="mapjs.js"></script>
+    
+    <title>Guide</title>
+</head>
+<body>
+ 
+        
+   
+    <header>
+        <div id="allbutton">
+            <button onclick="mapImage('bind')"      id="bindbutton">    bind    </button>
+            <button onclick="mapImage('ascent')"    id="ascentbutton">  ascent  </button>
+            <button onclick="mapImage('breeze')  "  id="breezebutton">  breeze  </button>
+            <button onclick="mapImage('icebox')"    id="iceboxbutton">  icebox  </button>
+            <button onclick="mapImage('lotus')"     id="lotusbutton">   lotus   </button>
+            <button onclick="mapImage('split')"     id="splitbutton">   split   </button>
+            <button onclick="mapImage('sunset')"    id="sunsetbutton"   >sunset </button>
+        </div>
+
+        <img id="bind"      src="./minimap/Bind_minimap.webp"   alt="Sample Image">
+        <img id="ascent"    src="./minimap/Ascent_minimap.webp" alt="Sample Image">
+        <img id="breeze"    src="./minimap/Breeze_minimap.webp" alt="Sample Image">
+        <img id="icebox"    src="./minimap/Icebox_minimap.webp" alt="Sample Image">
+        <img id="lotus"     src="./minimap/Lotus_minimap.webp"  alt="Sample Image">
+        <img id="split"     src="./minimap/Split_minimap.webp"  alt="Sample Image">
+        <img id="sunset"    src="./minimap/Sunset_minimap.webp" alt="Sample Image">
+
+    </header>
+
+    
+    
+    
+    <aside>
+          <div id="heads">
+            <button id="btheadastra"    onclick="allImage('.astraab')">     <img  id="headastra" src="./agents/head/astra-headshot.png" >     </button>
+            <button id="btheadbreach"   onclick="allImage('.breachab')">    <img id="headbrim" src="./agents/head/breach-headshot.png" >      </button>
+            <button id="btheadbrim"     onclick="allImage('.brimab')">      <img id="headbreach" src="./agents/head/brimstone-headshot.png" > </button>
+            <button id="btheadchamber"  onclick="allImage('.chamberab')">   <img id="headchamber" src="./agents/head/chamber-headshot.png" >  </button>
+            <button id="btheadclove"    onclick="allImage('.cloveab')">     <img  id="headclove" src="./agents/head/clove-headshot.png" >     </button>
+            <button id="btheadcypher"   onclick="allImage('.cypherab')">    <img  id="headcypher" src="./agents/head/cypher-headshot.png" >   </button>
+            <button id="btheaddeadlock" onclick="allImage('.deadlockab')">  <img id="headdeadlock"src="./agents/head/deadlock-headshot.png" > </button>
+            <button id="btheadfade"     onclick="allImage('.fadeab')">      <img id="headfade" src="./agents/head/fade-headshot.png" >        </button>
+            <button id="btheadgekko"    onclick="allImage('.gekkoab')">     <img id="headgekko" src="./agents/head/gekko-headshot.png" >      </button>
+            <button id="btheadharbor"   onclick="allImage('.harborab')">    <img id="headharbor"src="./agents/head/harbor-headshot.png" >     </button>
+            <button id="btheadiso"      onclick="allImage('.isoab')">       <img id="headiso"src="./agents/head/iso-headshot.png" >           </button>
+            <button id="btheadjett"     onclick="allImage('.jettab')">      <img id="headjett"src="./agents/head/jett-headshot.png" >         </button>
+            <button id="btheadkayo"     onclick="allImage('.kayoab')">      <img id="headkayo" src="./agents/head/kayo-headshot.png" >        </button>
+            <button id="btheadkilljoy"  onclick="allImage('.killjoyab')">   <img  id="headkilljoy" src="./agents/head/killjoy-headshot.png" > </button>
+            <button id="btheadneon"     onclick="allImage('.neonab')">      <img id="headomen" src="./agents/head/neon-headshot.png" >        </button>
+            <button id="btheadomen"     onclick="allImage('.omenab')">      <img id="headomen" src="./agents/head/omen-headshot.png" >        </button>
+            <button id="btheadphoenix"  onclick="allImage('.phoenixab')">   <img  id="headphoenix" src="./agents/head/phoenix-headshot.png" > </button>
+            <button id="btheadraze"     onclick="allImage('.razeab')">      <img id="headraze" src="./agents/head/raze-headshot.png" >        </button>
+            <button id="btheadreyna"    onclick="allImage('.reynaab')">     <img id="headreyna" src="./agents/head/reyna-headshot.png" >      </button>
+            <button id="btheadsage"     onclick="allImage('.sageab')">      <img id="headsage" src="./agents/head/sage-headshot.png" >        </button>
+            <button id="btheadskye"     onclick="allImage('.skyeab')">      <img  id="headskye" src="./agents/head/skye-headshot.png" >       </button>
+            <button id="btheadsova"     onclick="allImage('.sovaab')">      <img id="headsova" src="./agents/head/sova-headshot.png" >        </button>
+            <button id="btheadviper"    onclick="allImage('.viperab')">     <img id="headviper" src="./agents/head/viper-headshot.png" >      </button>
+            <button id="btheadyoru"     onclick="allImage('.yoruab')">      <img id="headyoru" src="./agents/head/yoru-headshot.png" >        </button>
+            
+    
+        </div>
+        
+    </aside>
+    
+        
+            <img id="Cosmic_Divide"     class="astraab"     src="./agents/astra/Cosmic_Divide.png"       alt="ab1">
+            <img id="Gravity_Well"      class="astraab"     src="./agents/astra/Gravity_Well.webp"       alt="ab2">
+            <img id="Nova_Pulse"        class="astraab"     src="./agents/astra/Nova_Pulse.webp"         alt="ab3">
+            <img id="Stars"             class="astraab"     src="./agents/astra/Stars.webp"              alt="ab4">
+
+            <img  id="Aftershock"       class="breachab"    src="./agents/breach/Aftershock.webp"        alt="ab1">
+            <img  id="Fault_Line"       class="breachab"    src="./agents/breach/Fault_Line.webp"        alt="ab2">
+            <img  id="Flashpoint"       class="breachab"    src="./agents/breach/Flashpoint.webp"        alt="ab3">
+            <img  id="Rolling_Thunder"  class="breachab"    src="./agents/breach/Rolling_Thunder.webp"   alt="ab4">  
+
+            <img  id="Incendiary"       class="brimab"      src="./agents/brimstone/Incendiary.webp"     alt="ab1">
+            <img  id="Orbital_Strike"   class="brimab"      src="./agents/brimstone/Orbital_Strike.webp" alt="ab2">
+            <img  id="Sky_Smoke"        class="brimab"      src="./agents/brimstone/Sky_Smoke.webp"      alt="ab3">
+            <img  id="Stim_Beacon"      class="brimab"      src="./agents/brimstone/Stim_Beacon.webp"    alt="ab4">
+
+            <img  id="Headhunter"       class="chamberab"   src="./agents/chamber/Headhunter.webp"       alt="ab1">
+            <img  id="Rendezvous"       class="chamberab"   src="./agents/chamber/Rendezvous.webp"       alt="ab2">
+            <img  id="Tour_De_Force"    class="chamberab"   src="./agents/chamber/Tour_De_Force.webp"    alt="ab3">
+            <img  id="Trademark"        class="chamberab"   src="./agents/chamber/Trademark.webp"        alt="ab4">
+
+            <img  id="Meddle"           class="cloveab"     src="./agents/clove/Meddle.webp"             alt="ab1">
+            <img  id="Not_Dead_Yet"     class="cloveab"     src="./agents/clove/Not_Dead_Yet.webp"       alt="ab2">
+            <img  id="Pick-me-up"       class="cloveab"     src="./agents/clove/Pick-me-up.webp"         alt="ab3">
+            <img  id="Ruse"             class="cloveab"     src="./agents/clove/Ruse.webp"               alt="ab4">
+
+            <img  id="Cyber_Cage"       class="cypherab"    src="./agents/cypher/Cyber_Cage.webp"        alt="ab1">
+            <img  id="Neural_Theft"     class="cypherab"    src="./agents/cypher/Neural_Theft.webp"      alt="ab2">
+            <img  id="Spycam"           class="cypherab"    src="./agents/cypher/Spycam.webp"            alt="ab3">
+            <img  id="Trapwire"         class="cypherab"    src="./agents/cypher/Trapwire.webp"          alt="ab4">
+            
+            <img  id="Annihilation"     class="deadlockab"  src="./agents/deadlock/Annihilation.webp"    alt="ab1">
+            <img  id="Barrier_Mesh"     class="deadlockab"  src="./agents/deadlock/Barrier_Mesh.webp"    alt="ab2">
+            <img  id="GravNet"          class="deadlockab"  src="./agents/deadlock/GravNet.webp"         alt="ab3">
+            <img  id="Sonic_Sensor"     class="deadlockab"  src="./agents/deadlock/Sonic_Sensor.webp"    alt="ab4">
+            
+            <img  id="Haunt"            class="fadeab"      src="./agents/fade/Haunt.webp"               alt="ab1">
+            <img  id="Nightfall"        class="fadeab"      src="./agents/fade/Nightfall.webp"           alt="ab2">
+            <img  id="Prowler"          class="fadeab"      src="./agents/fade/Prowler.webp"             alt="ab3">
+            <img  id="Seize"            class="fadeab"      src="./agents/fade/Seize.webp"               alt="ab4">
+
+            <img  id="Dizzy"            class="gekkoab"     src="./agents/gekko/Dizzy.webp"              alt="ab1">
+            <img  id="Mosh_Pit"         class="gekkoab"     src="./agents/gekko/Mosh_Pit.webp"           alt="ab2">
+            <img  id="Thrash"           class="gekkoab"     src="./agents/gekko/Thrash.webp"             alt="ab3">
+            <img  id="Wingman"          class="gekkoab"     src="./agents/gekko/Wingman.webp"            alt="ab4">
+
+            <img  id="Cascade"          class="harborab"    src="./agents/harbor/Cascade.webp"           alt="ab1">
+            <img  id="Cove"             class="harborab"    src="./agents/harbor/Cove.webp"              alt="ab2">
+            <img  id="High_Tide"        class="harborab"    src="./agents/harbor/High_Tide.webp"         alt="ab3">
+            <img  id="Reckoning"        class="harborab"    src="./agents/harbor/Reckoning.webp"         alt="ab4">
+
+            <img  id="Blade_Storm"      class="jettab"      src="./agents/jett/Blade_Storm.webp"         alt="ab1">
+            <img  id="Cloudburst"       class="jettab"      src="./agents/jett/Cloudburst.webp"          alt="ab2">
+            <img  id="Tailwind"         class="jettab"      src="./agents/jett/Tailwind.webp"            alt="ab3">
+            <img  id="Updraft"          class="jettab"      src="./agents/jett/Updraft.webp"             alt="ab4">
+
+            <img  id="FLASH-drive"      class="kayoab"      src="./agents/kayo/FLASH-drive.webp"         alt="ab1">
+            <img  id="FRAG-ment"        class="kayoab"      src="./agents/kayo/FRAG-ment.webp"           alt="ab2">
+            <img  id="NULL-cmd"         class="kayoab"      src="./agents/kayo/NULL-cmd.webp"            alt="ab3">
+            <img  id="ZERO-point"       class="kayoab"      src="./agents/kayo/ZERO-point.webp"          alt="ab4">
+
+            <img  id="Alarmbot"         class="killjoyab"   src="./agents/killjoy/Alarmbot.webp"        alt="ab1">
+            <img  id="Lockdown"         class="killjoyab"   src="./agents/killjoy/Lockdown.webp"        alt="ab2">
+            <img  id="Nanoswarm"        class="killjoyab"   src="./agents/killjoy/Nanoswarm.webp"       alt="ab3">
+            <img  id="Turret"           class="killjoyab"   src="./agents/killjoy/Turret.webp"          alt="ab4">
+
+            <img  id="Fast_Lane"        class="neonab"      src="./agents/neon/Fast_Lane.webp"          alt="ab1">
+            <img  id="High_Gear"        class="neonab"      src="./agents/neon/High_Gear.webp"          alt="ab2">
+            <img  id="Overdrive"        class="neonab"      src="./agents/neon/Overdrive.webp"          alt="ab3">
+            <img  id="Relay_Bolt"       class="neonab"      src="./agents/neon/Relay_Bolt.webp"         alt="ab4">
+
+            <img  id="Dark_Cover"       class="omenab"      src="./agents/omen/Dark_Cover.webp"         alt="ab1">
+            <img  id="From_the_Shadows" class="omenab"      src="./agents/omen/From_the_Shadows.webp"   alt="ab2">
+            <img  id="Paranoia"         class="omenab"      src="./agents/omen/Paranoia.webp"           alt="ab3">
+            <img  id="Shrouded_Step"    class="omenab"      src="./agents/omen/Shrouded_Step.webp"      alt="ab4">
+
+            <img  id="Blaze"            class="phoenixab"   src="./agents/pheonix/Blaze.webp"           alt="ab1">
+            <img  id="Curveball"        class="phoenixab"   src="./agents/pheonix/Curveball.webp"       alt="ab2">
+            <img  id="Hot_Hands"        class="phoenixab"   src="./agents/pheonix/Hot_Hands.webp"       alt="ab3">
+            <img  id="Run_it_Back"      class="phoenixab"   src="./agents/pheonix/Run_it_Back.webp"     alt="ab4">
+
+            <img  id="Blast_Pack"       class="razeab"      src="./agents/raze/Blast_Pack.webp"         alt="ab1">
+            <img  id="Boom_Bot"         class="razeab"      src="./agents/raze/Boom_Bot.webp"           alt="ab2">
+            <img  id="Paint_Shells"     class="razeab"      src="./agents/raze/Paint_Shells.webp"       alt="ab3">
+            <img  id="Showstopper"      class="razeab"      src="./agents/raze/Showstopper.webp"        alt="ab4">
+
+            <img  id="Devour"           class="reynaab"     src="./agents/reyna/Devour.webp"            alt="ab1">
+            <img  id="Dismiss"          class="reynaab"     src="./agents/reyna/Dismiss.webp"           alt="ab2">
+            <img  id="Empress"          class="reynaab"     src="./agents/reyna/Empress.webp"           alt="ab3">
+            <img  id="Leer"             class="reynaab"     src="./agents/reyna/Leer.webp"              alt="ab4">
+
+            <img  id="Barrier_Mesh"     class="sageab"      src="./agents/sage/Barrier_Orb.webp"        alt="ab1">
+            <img  id="Healing_Orb"      class="sageab"      src="./agents/sage/Healing_Orb.webp"        alt="ab2">
+            <img  id="Resurrection"     class="sageab"      src="./agents/sage/Resurrection.webp"       alt="ab3">
+            <img  id="Slow_Orb"         class="sageab"      src="./agents/sage/Slow_Orb.webp"           alt="ab4">
+
+            <img  id="Guiding_Light"    class="skyeab"      src="./agents/skye/Guiding_Light.webp"      alt="ab1">
+            <img  id="Regrowth"         class="skyeab"      src="./agents/skye/Regrowth.webp"           alt="ab2">
+            <img  id="Seekers"          class="skyeab"      src="./agents/skye/Seekers.webp"            alt="ab3">
+            <img  id="Trailblazer"      class="skyeab"      src="./agents/skye/Trailblazer.webp"        alt="ab4">
+
+            <img  id="Hunter_Fury"      class="sovaab"      src="./agents/sova/Hunter_Fury.webp"        alt="ab1">
+            <img  id="Owl_Drone"        class="sovaab"      src="./agents/sova/Owl_Drone.webp"          alt="ab2">
+            <img  id="Recon_Bolt"       class="sovaab"      src="./agents/sova/Recon_Bolt.webp"         alt="ab3">
+            <img  id="Shock_Bolt"       class="sovaab"      src="./agents/sova/Shock_Bolt.webp"         alt="ab4">
+
+            <img  id="Poison_Cloud"     class="viperab"     src="./agents/viper/Poison_Cloud.webp"      alt="ab1">
+            <img  id="Snake_Bite"       class="viperab"     src="./agents/viper/Snake_Bite.webp"        alt="ab2">
+            <img  id="Toxic_Screen"     class="viperab"     src="./agents/viper/Toxic_Screen.webp"      alt="ab3">
+            <img  id="Viper_Pit"        class="viperab"     src="./agents/viper/Viper_Pit.webp"         alt="ab4">
+
+            <img  id="Blindside"        class="yoruab"      src="./agents/yoru/Blindside.webp"          alt="ab1">
+            <img  id="Dimensional_Drift"class="yoruab"      src="./agents/yoru/Dimensional_Drift.webp"  alt="ab2">
+            <img  id="Fakeout"          class="yoruab"      src="./agents/yoru/Fakeout.webp"            alt="ab3">
+            <img  id="Gatecrash"        class="yoruab"      src="./agents/yoru/Gatecrash.webp"          alt="ab4">
+
+
+            
+
+
+            
+    
+            
+      
+        
+          <img id="astraPic"   class="astraab"      src="./agents/Astra_Artwork_Full.png">
+          <img id="breachPic"  class="breachab"     src="./agents/Breach_Artwork_Full.png">
+          <img id="brimPic"    class="brimab"       src="./agents/Brimstone_Artwork_Full.png">
+          <img id="chamberPic" class="chamberab"    src="./agents/Chamber_Artwork_Full.png">
+          <img id="clovePic"   class="cloveab"      src="./agents/Clove_Artwork_Full.png">
+          <img id="cypherPic"  class="cypherab"     src="./agents/Cypher_Artwork_Full.png">
+          <img id="deadlockPic"class="deadlockab"   src="./agents/Deadlock_Artwork_Full.png">
+          <img id="fadePic"    class="fadeab"       src="./agents/Fade_Artwork_Full.png">
+          <img id="gekkoPic"   class="gekkoab"      src="./agents/Gekko_Artwork_Full.png">
+          <img id="harborPic"  class="harborab"     src="./agents/Harbor_Artwork_Full.png">
+          <img id="isoPic"     class="isoab"        src="./agents/Iso_Artwork_Full.png">
+          <img id="jettPic"    class="jettab"       src="./agents/Jett_Artwork_Full.png">
+          <img id="kayoPic"    class="kayoab"       src="./agents/KAYO_Artwork_Full.png">
+          <img id="killjoyPic" class="killjoyab"    src="./agents/Killjoy_Artwork_Full.png">
+          <img id="neonPic"    class="neonab"       src="./agents/Neon_Artwork_Full.png" >
+          <img id="omenPic"    class="omenab"       src="./agents/Omen_Artwork_Full.png">
+          <img id="phoenixPic" class="phoenixab"    src="./agents/Phoenix_Artwork_Full.png">
+          <img id="razePic"    class="razeab"       src="./agents/Raze_Artwork_Full.png">
+          <img id="reynaPic"   class="reynaab"      src="./agents/Reyna_Artwork_Full.png">
+          <img id="sagePic"    class="sageab"       src="./agents/Sage_Artwork_Full.png">
+          <img id="skyePic"    class="skyeab"       src="./agents/Skye_Artwork_Full.png">
+          <img id="sovaPic"    class="sovaab"       src="./agents/Sova_Artwork_Full.png">
+          <img id="viperPic"   class="viperab"      src="./agents/Viper_Artwork_Full.png" >
+          <img id="yoruPic"    class="yoruab"       src="./agents/Yoru_Artwork_Full.png">
+    
+
+     
+    <script>
+       
+
+        
+        var astra  = document.getElementById("astraPic");
+        var astra1 = document.getElementById("Cosmic_Divide");
+        var astra2 = document.getElementById("Gravity_Well");
+        var astra3 = document.getElementById("Nova_Pulse");
+        var astra4 = document.getElementById("Stars");
+
+        var breach = document.getElementById("breachPic");
+        var breach1 = document.getElementById("Aftershock");
+        var breach2 = document.getElementById("Fault_Line");
+        var breach3 = document.getElementById("Flashpoint");
+        var breach4 = document.getElementById("Rolling_Thunder");
+
+        var brim = document.getElementById("brimPic");
+        var brim1 = document.getElementById("Incendiary");
+        var brim2 = document.getElementById("Orbital_Strike");
+        var brim3 = document.getElementById("Sky_Smoke");
+        var brim4 = document.getElementById("Stim_Beacon");
+
+        var chamber = document.getElementById("chamberPic");
+        var chamber1 = document.getElementById("Headhunter");
+        var chamber2 = document.getElementById("Rendezvous");
+        var chamber3 = document.getElementById("Tour_De_Force");
+        var chamber4 = document.getElementById("Trademark");
+
+        var clove = document.getElementById("clovePic");
+        var clove1 = document.getElementById("Meddle");
+        var clove2 = document.getElementById("Not_Dead_Yet");
+        var clove3 = document.getElementById("Pick-me-up");
+        var clove4 = document.getElementById("Ruse");
+
+        var cypher = document.getElementById("cypherPic");
+        var cypher1 = document.getElementById("Cyber_Cage");
+        var cypher2 = document.getElementById("Neural_Theft");
+        var cypher3 = document.getElementById("Spycam");
+        var cypher4 = document.getElementById("Trapwire");
+
+        var deadlock = document.getElementById("deadlockPic");
+        var deadlock1 = document.getElementById("Annihilation");
+        var deadlock2 = document.getElementById("Barrier_Mesh");
+        var deadlock3 = document.getElementById("GravNet");
+        var deadlock4 = document.getElementById("Sonic_Sensor");
+
+        var fade = document.getElementById("fadePic");
+        var fade1 = document.getElementById("Haunt");
+        var fade2 = document.getElementById("Nightfall");
+        var fade3 = document.getElementById("Prowler");
+        var fade4 = document.getElementById("Seize");
+
+        var gekko = document.getElementById("gekkoPic");
+        var gekko1 = document.getElementById("Dizzy");
+        var gekko2 = document.getElementById("Mosh_Pit");
+        var gekko3 = document.getElementById("Thrash");
+        var gekko4 = document.getElementById("Wingman");
+
+        var harbor = document.getElementById("harborPic");
+        var harbor1 = document.getElementById("Cascade");
+        var harbor2 = document.getElementById("Cove");
+        var harbor3 = document.getElementById("High_Tide");
+        var harbor4 = document.getElementById("Reckoning");
+
+        var iso = document.getElementById("isoPic");
+        var iso1 = document.getElementById("isoPic");
+        var iso2 = document.getElementById("isoPic");
+        var iso3 = document.getElementById("isoPic");
+        var iso4 = document.getElementById("isoPic");
+
+        var jett = document.getElementById("jettPic");
+        var jett1 = document.getElementById("Blade_Storm");
+        var jett2 = document.getElementById("Cloudburst");
+        var jett3 = document.getElementById("Tailwind");
+        var jett4 = document.getElementById("Updraft");
+
+        var kayo = document.getElementById("kayoPic");
+        var kayo1 = document.getElementById("FLASH-drive");
+        var kayo2 = document.getElementById("FRAG-ment");
+        var kayo3 = document.getElementById("NULL-cmd");
+        var kayo4 = document.getElementById("ZERO-point");
+
+        var killjoy = document.getElementById("killjoyPic");
+        var killjoy1 = document.getElementById("Alarmbot");
+        var killjoy2 = document.getElementById("Lockdown");
+        var killjoy3 = document.getElementById("Nanoswarm");
+        var killjoy4 = document.getElementById("Turret");
+
+        var neon = document.getElementById("neonPic");
+        var neon1 = document.getElementById("Fast_Lane");
+        var neon2 = document.getElementById("High_Gear");
+        var neon3 = document.getElementById("Overdrive");
+        var neon4 = document.getElementById("Relay_Bolt");
+        
+        var omen = document.getElementById("omenPic");
+        var omen1 = document.getElementById("Dark_Cover");
+        var omen2 = document.getElementById("From_the_Shadows");
+        var omen3 = document.getElementById("Paranoia");
+        var omen4 = document.getElementById("Shrouded_Step");
+
+        var phoenix = document.getElementById("phoenixPic");
+        var phoenix1 = document.getElementById("Blaze");
+        var phoenix2 = document.getElementById("Curveball");
+        var phoenix3 = document.getElementById("Hot_Hands");
+        var phoenix4 = document.getElementById("Run_it_Back");
+
+        var raze = document.getElementById("razePic");
+        var raze1 = document.getElementById("Blast_Pack");
+        var raze2 = document.getElementById("Boom_Bot");
+        var raze3 = document.getElementById("Paint_Shells");
+        var raze4 = document.getElementById("Showstopper");
+
+        var reyna = document.getElementById("reynaPic");
+        var reyna1 = document.getElementById("Devour");
+        var reyna2 = document.getElementById("Dismiss");
+        var reyna3 = document.getElementById("Empress");
+        var reyna4 = document.getElementById("Leer");
+
+        var sage = document.getElementById("sagePic");
+        var sage1 = document.getElementById("Barrier_Mesh");
+        var sage2 = document.getElementById("Healing_Orb");
+        var sage3 = document.getElementById("Resurrection");
+        var sage4 = document.getElementById("Slow_Orb");
+
+        var skye = document.getElementById("skyePic");
+        var skye1 = document.getElementById("Guiding_Light");
+        var skye2 = document.getElementById("Regrowth");
+        var skye3 = document.getElementById("Seekers");
+        var skye4 = document.getElementById("Trailblazer");
+
+        var sova = document.getElementById("sovaPic");
+        var sova1 = document.getElementById("Hunter_Fury");
+        var sova2 = document.getElementById("Owl_Drone");
+        var sova3 = document.getElementById("Recon_Bolt");
+        var sova4 = document.getElementById("Shock_Bolt");
+
+        var viper = document.getElementById("viperPic");
+        var viper1 = document.getElementById("Poison_Cloud");
+        var viper2 = document.getElementById("Snake_Bite");
+        var viper3 = document.getElementById("Toxic_Screen");
+        var viper4 = document.getElementById("Viper_Pit");
+
+        var yoru = document.getElementById("yoruPic");
+        var yoru1 = document.getElementById("Blindside");
+        var yoru2 = document.getElementById("Dimensional_Drift");
+        var yoru3 = document.getElementById("Fakeout");
+        var yoru4 = document.getElementById("Gatecrash");
+
+        var moving = false;
+
+        astra.addEventListener("mousedown", initialClick, false);
+        astra1.addEventListener("mousedown", initialClick, false);
+        astra2.addEventListener("mousedown", initialClick, false);
+        astra3.addEventListener("mousedown", initialClick, false);
+        astra4.addEventListener("mousedown", initialClick, false);
+
+        breach.addEventListener("mousedown", initialClick, false);
+        breach1.addEventListener("mousedown", initialClick, false);
+        breach2.addEventListener("mousedown", initialClick, false);
+        breach3.addEventListener("mousedown", initialClick, false);
+        breach4.addEventListener("mousedown", initialClick, false);
+
+        brim.addEventListener("mousedown", initialClick, false);
+        brim1.addEventListener("mousedown", initialClick, false);
+        brim2.addEventListener("mousedown", initialClick, false);
+        brim3.addEventListener("mousedown", initialClick, false);
+        brim4.addEventListener("mousedown", initialClick, false);
+
+        chamber.addEventListener("mousedown", initialClick, false);
+        chamber1.addEventListener("mousedown", initialClick, false);
+        chamber2.addEventListener("mousedown", initialClick, false);
+        chamber3.addEventListener("mousedown", initialClick, false);
+        chamber4.addEventListener("mousedown", initialClick, false);
+
+        clove.addEventListener("mousedown", initialClick, false);
+        clove1.addEventListener("mousedown", initialClick, false);
+        clove2.addEventListener("mousedown", initialClick, false);
+        clove3.addEventListener("mousedown", initialClick, false);
+        clove4.addEventListener("mousedown", initialClick, false);
+
+        cypher.addEventListener("mousedown", initialClick, false);
+        cypher1.addEventListener("mousedown", initialClick, false);
+        cypher2.addEventListener("mousedown", initialClick, false);
+        cypher3.addEventListener("mousedown", initialClick, false);
+        cypher4.addEventListener("mousedown", initialClick, false);
+
+        deadlock.addEventListener("mousedown", initialClick, false);
+        deadlock1.addEventListener("mousedown", initialClick, false);
+        deadlock2.addEventListener("mousedown", initialClick, false);
+        deadlock3.addEventListener("mousedown", initialClick, false);
+        deadlock4.addEventListener("mousedown", initialClick, false);
+
+
+        fade.addEventListener("mousedown", initialClick, false);
+        fade1.addEventListener("mousedown", initialClick, false);
+        fade2.addEventListener("mousedown", initialClick, false);
+        fade3.addEventListener("mousedown", initialClick, false);
+        fade4.addEventListener("mousedown", initialClick, false);
+
+        gekko.addEventListener("mousedown", initialClick, false);
+        gekko1.addEventListener("mousedown", initialClick, false);
+        gekko2.addEventListener("mousedown", initialClick, false);
+        gekko3.addEventListener("mousedown", initialClick, false);
+        gekko4.addEventListener("mousedown", initialClick, false);
+
+        harbor.addEventListener("mousedown", initialClick, false);
+        harbor1.addEventListener("mousedown", initialClick, false);
+        harbor2.addEventListener("mousedown", initialClick, false);
+        harbor3.addEventListener("mousedown", initialClick, false);
+        harbor4.addEventListener("mousedown", initialClick, false);
+
+        iso.addEventListener("mousedown", initialClick, false);
+        iso1.addEventListener("mousedown", initialClick, false);
+        iso2.addEventListener("mousedown", initialClick, false);
+        iso3.addEventListener("mousedown", initialClick, false);
+        iso4.addEventListener("mousedown", initialClick, false);
+
+        jett.addEventListener("mousedown", initialClick, false);
+        jett1.addEventListener("mousedown", initialClick, false);
+        jett2.addEventListener("mousedown", initialClick, false);
+        jett3.addEventListener("mousedown", initialClick, false);
+        jett4.addEventListener("mousedown", initialClick, false);
+
+        kayo.addEventListener("mousedown", initialClick, false);
+        kayo1.addEventListener("mousedown", initialClick, false);
+        kayo2.addEventListener("mousedown", initialClick, false);
+        kayo3.addEventListener("mousedown", initialClick, false);
+        kayo4.addEventListener("mousedown", initialClick, false);
+
+        killjoy.addEventListener("mousedown", initialClick, false);
+        killjoy1.addEventListener("mousedown", initialClick, false);
+        killjoy2.addEventListener("mousedown", initialClick, false);
+        killjoy3.addEventListener("mousedown", initialClick, false);
+        killjoy4.addEventListener("mousedown", initialClick, false);
+
+        neon.addEventListener("mousedown", initialClick, false);
+        neon1.addEventListener("mousedown", initialClick, false);
+        neon2.addEventListener("mousedown", initialClick, false);
+        neon3.addEventListener("mousedown", initialClick, false);
+        neon4.addEventListener("mousedown", initialClick, false);
+
+        omen.addEventListener("mousedown", initialClick, false);
+        omen1.addEventListener("mousedown", initialClick, false);
+        omen2.addEventListener("mousedown", initialClick, false);
+        omen3.addEventListener("mousedown", initialClick, false);
+        omen4.addEventListener("mousedown", initialClick, false);
+
+        phoenix.addEventListener("mousedown", initialClick, false);
+        phoenix1.addEventListener("mousedown", initialClick, false);
+        phoenix2.addEventListener("mousedown", initialClick, false);
+        phoenix3.addEventListener("mousedown", initialClick, false);
+        phoenix4.addEventListener("mousedown", initialClick, false);
+
+        raze.addEventListener("mousedown", initialClick, false);
+        raze1.addEventListener("mousedown", initialClick, false);
+        raze2.addEventListener("mousedown", initialClick, false);
+        raze3.addEventListener("mousedown", initialClick, false);
+        raze4.addEventListener("mousedown", initialClick, false);
+
+        reyna.addEventListener("mousedown", initialClick, false);
+        reyna1.addEventListener("mousedown", initialClick, false);
+        reyna2.addEventListener("mousedown", initialClick, false);
+        reyna3.addEventListener("mousedown", initialClick, false);
+        reyna4.addEventListener("mousedown", initialClick, false);
+
+        sage.addEventListener("mousedown", initialClick, false);
+        sage1.addEventListener("mousedown", initialClick, false);
+        sage2.addEventListener("mousedown", initialClick, false);
+        sage3.addEventListener("mousedown", initialClick, false);
+        sage4.addEventListener("mousedown", initialClick, false);
+
+        skye.addEventListener("mousedown", initialClick, false);
+        skye1.addEventListener("mousedown", initialClick, false);
+        skye2.addEventListener("mousedown", initialClick, false);
+        skye3.addEventListener("mousedown", initialClick, false);
+        skye4.addEventListener("mousedown", initialClick, false);
+
+        sova.addEventListener("mousedown", initialClick, false);
+        sova1.addEventListener("mousedown", initialClick, false);
+        sova2.addEventListener("mousedown", initialClick, false);
+        sova3.addEventListener("mousedown", initialClick, false);
+        sova4.addEventListener("mousedown", initialClick, false);
+
+        viper.addEventListener("mousedown", initialClick, false);
+        viper1.addEventListener("mousedown", initialClick, false);
+        viper2.addEventListener("mousedown", initialClick, false);
+        viper3.addEventListener("mousedown", initialClick, false);
+        viper4.addEventListener("mousedown", initialClick, false);
+
+        yoru.addEventListener("mousedown", initialClick, false);
+        yoru1.addEventListener("mousedown", initialClick, false);
+        yoru2.addEventListener("mousedown", initialClick, false);
+        yoru3.addEventListener("mousedown", initialClick, false);
+        yoru4.addEventListener("mousedown", initialClick, false);
+
+
+        function move(e){
+
+        var newX = e.clientX - 10;
+        var newY = e.clientY - 10;
+
+        image.style.left = newX + "px";
+        image.style.top = newY + "px";
+
+        
+        }
+
+        function initialClick(e) {
+
+        if(moving){
+            document.removeEventListener("mousemove", move);
+            moving = !moving;
+            return;
+        }
+        
+        moving = !moving;
+        image = this;
+
+        document.addEventListener("mousemove", move, false);
+
+        }
+    </script> 
+    </body>
+</html>
